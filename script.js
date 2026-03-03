@@ -148,9 +148,7 @@ const projects = [
     ],
     buttons: [
       { text: "기획서", url: "https://www.figma.com/design/Ui8qBzNovI6ykrwsKE71ma/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=5hYdFnuahCrGSav0-1" },
-      { text: "사이트 바로가기", url: "https://cookieo3o.github.io/national-park/", class: "site-shortcut" },
-      { text: "GitHub", url: "https://github.com/cookieo3o/national-park" },
-      { text: "Figma", url: "https://www.figma.com/design/Ui8qBzNovI6ykrwsKE71ma/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=5hYdFnuahCrGSav0-1" }
+      { text: "사이트 바로가기", url: "https://cookieo3o.github.io/national-park/", class: "site-shortcut" }
     ]
   },
   {
@@ -406,4 +404,5 @@ mobileLinks.forEach(link => {
     toggleBtn.classList.remove('active');
     document.body.classList.remove('menu-open');
   });
+
 });
