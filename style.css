@@ -112,7 +112,7 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(image/title-point.png);
+  background: url(/image/title-point.png);
   z-index: 0;
 }
 
@@ -248,7 +248,7 @@ body {
 .main-visual .inner {
   padding: 145px 0;
   border-left: 2px solid #646464;
-  background: url(image/main-circle-bg01.svg) no-repeat left bottom;
+  background: url(/image/main-circle-bg01.svg) no-repeat left bottom;
 }
 .main-visual .inner .main-text-box h2 {
   margin-left: -10px;
@@ -265,7 +265,7 @@ body {
   display: block;
   width: 70px;
   height: 80px;
-  background: url(image/main-point-figure.svg) no-repeat;
+  background: url(/image/main-point-figure.svg) no-repeat;
   left: 575px;
   bottom: 5px;
   z-index: -5;
@@ -316,7 +316,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  background: url(image/profile-bg.png) no-repeat left top;
+  background: url(/image/profile-bg.png) no-repeat left top;
   border: 2px solid #646464;
   border-top: none;
   border-bottom: none;
