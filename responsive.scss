@@ -672,7 +672,7 @@
     width: 100%;
     .popup {
       width: 100%;
-      max-height: 100vdh;
+      max-height: calc(100vh-35px);
       margin-top: 45px;
       border: none;
       flex-direction: column;
