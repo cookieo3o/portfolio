@@ -483,6 +483,9 @@
         padding: 20px;
         border-right: $border;
         position: relative;
+        p {
+          text-align: left;
+        }
         &::before {
           content: '';
           display: block;
