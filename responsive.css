@@ -257,7 +257,7 @@
   .popup-area .popup {
     width: 100%;
     height: auto;
-    max-height: 65%;
+    max-height: calc(100vh-35px);
     display: flex;
   }
   .popup-area .popup .popup-close img {
