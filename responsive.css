@@ -480,6 +480,10 @@
     border-right: 2px solid #646464;
     position: relative;
   }
+
+    .main-visual .logo-box .logo-explain p {
+    text-align: left;
+  }
   .main-visual .logo-box .logo-explain::before {
     content: "";
     display: block;
