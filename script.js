@@ -136,15 +136,15 @@ const projects = [
     period: "7일",
     workType: "웹 - 반응형 구현",
     desc: "국립공원단 리뉴얼 프로젝트를 진행했습니다.\n디자인부터 퍼블리싱까지 전 과정을 맡으며 브랜드의 정체성을 유지하는 동시에 사용자 편의성을 높이는 방향으로 작업했습니다.\n이를 통해 브랜드 아이덴티티와 사용성의 균형에 대해 많은 것을 배울 수 있었습니다.",
-    image: "../image/popup-project01.png",
+    image: "image/popup-project01.png",
     icons: [
-      "../image/icon01.png",
-      "../image/icon02.png",
-      "../image/icon03.png",
-      "../image/icon05.png",
-      "../image/icon06.png",
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon01.png",
+      "image/icon02.png",
+      "image/icon03.png",
+      "image/icon05.png",
+      "image/icon06.png",
+      "image/icon07.png",
+      "image/icon08.png"
     ],
     buttons: [
       { text: "기획서", url: "https://www.figma.com/design/Ui8qBzNovI6ykrwsKE71ma/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=5hYdFnuahCrGSav0-1" },
@@ -159,13 +159,13 @@ const projects = [
     period: "10일",
     workType: "웹 - 반응형 구현",
     desc: "닌텐도 리뉴얼 팀 프로젝트를 진행했습니다.\n팀원들과 협업해 다양한 아이디어를 반영하며 사용자 경험을 중심으로 구조를 개선하였습니다.\n이를 통해 협업의 중요성과 경험을 살린 설계에 대해 배울 수 있었습니다.",
-    image: "../image/popup-project02.png",
+    image: "image/popup-project02.png",
     icons: [
-      "../image/icon01.png",
-      "../image/icon03.png",
-      "../image/icon04.png",
-      "../image/icon05.png",
-      "../image/icon06.png"
+      "image/icon01.png",
+      "image/icon03.png",
+      "image/icon04.png",
+      "image/icon05.png",
+      "image/icon06.png"
     ],
     buttons: [
       { text: "기획서", url: "https://www.figma.com/deck/6irwv1qNXooL2BzOl1OsOT/%EC%97%90%EC%8A%A4%ED%8C%8C-%EB%8B%8C%ED%85%90%EB%8F%84%EB%A6%AC%EB%89%B4%EC%96%BCppt?node-id=35-107&t=X6K4fdGySijgjSXt-1" },
@@ -180,13 +180,13 @@ const projects = [
     period: "7일",
     workType: "웹 - 반응형 미구현",
     desc: "그라운드 시소 리뉴얼을 작업했습니다.\n 브랜드 의미를 반영해 컬러를 선택하여 로고를 리브랜딩하고 보다 직관적이고 접근성 높은 디자인으로 개선했습니다.\n전체 과정을 작업하며 디자인과 개발의 연결 흐름을 이해할 수 있었고 첫 프로젝트라 어려움도 있었지만 그 과정에서 기본적인 역량을 쌓으며 한 단계 성장할 수 있었습니다.",
-    image: "../image/popup-project03.png",
+    image: "image/popup-project03.png",
     icons: [
-      "../image/icon01.png",
-      "../image/icon02.png",
-      "../image/icon03.png",
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon01.png",
+      "image/icon02.png",
+      "image/icon03.png",
+      "image/icon07.png",
+      "image/icon08.png"
     ],
     buttons: [
       { text: "웹 스타일 가이드", url: "https://cookieo3o.github.io/siso/style%20guide.pdf"},
@@ -199,13 +199,13 @@ const projects = [
     period: "7일",
     workType: "웹 - 반응형 미구현",
     desc: "2021년 8th MINI ALBUM ‘Your Choice’의 수록곡 Ready to Love 콘셉트를 중심으로 전체 디자인 방향을 재구성하여 앨범 커버에 맞게 컬러 톤과 비주얼 무드를 섬세하게 조정했습니다.\n이번 작업을 통해 음악 콘셉트를 시각 요소로 해석하여 표현 방식에 대해 깊이 있게 경험할 수 있었습니다.",
-    image: "../image/popup-project04.png",
+    image: "image/popup-project04.png",
     icons: [
-      "../image/icon01.png",
-      "../image/icon02.png",
-      "../image/icon03.png",
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon01.png",
+      "image/icon02.png",
+      "image/icon03.png",
+      "image/icon07.png",
+      "image/icon08.png"
     ],
     buttons: [
       { text: "사이트 바로가기", url: "https://cookieo3o.github.io/seventeen/", class: "site-shortcut" }  
@@ -217,10 +217,10 @@ const projects = [
     period: "5일",
     workType: "제품 상세 페이지 디자인",
     desc: "쇼핑몰 상세 페이지 디자인 작업입니다.\n기존 공장형 상세페이지를 브랜드 특성에 맞게 리디자인했습니다.\n핵심 정보는 강조되도록 구조를 재정리했으며 벡터 요소는 AI에 의존하지 않고 직접 제작해 완성도를 높였습니다.",
-    image: "../image/popup-project05.png",
+    image: "image/popup-project05.png",
     icons: [
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon07.png",
+      "image/icon08.png"
     ]
   },
   {
@@ -229,10 +229,10 @@ const projects = [
     period: "5일",
     workType: "리브랜딩",
     desc: "우무 리브랜딩 프로젝트를 진행했습니다.\n'UMU’ 이니셜을 활용해 로고에 의미를 더하고, 기존보다 귀엽고 활용도 높은 방향으로 디자하여  다양한 매체에 적용될 수 있도록 확장성을 고려했습니다.\n 처음 진행한 로고 작업이라 어려움도 있었지만, 브랜드를 시각적으로 풀어내는 과정에서 많은 것을 배울 수 있었습니다.",
-    image: "../image/popup-project06.png",
+    image: "image/popup-project06.png",
     icons: [
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon07.png",
+      "image/icon08.png"
     ],
     buttons: [
       { text: "스타일 가이드", url: "https://cookieo3o.github.io/siso/umu%20style%20guide.pdf" }
@@ -244,10 +244,10 @@ const projects = [
     period: "인트로 당 5시간",
     workType: "교육 콘텐츠 인트로",
     desc: "교육 콘텐츠 인트로 화면 디자인 작업입니다.\n학습 콘텐츠 특성에 맞게 차분한 분위기와 높은 가독성을 중심으로 디자인했습니다.\n초반에는 방향을 잡는 데 어려움이 있었지만 작업을 통해 가독성과 색 사용, 제목 구성 방식에 대해 배울 수 있었습니다.",
-    image: "../image/popup-project07.png",
+    image: "image/popup-project07.png",
     icons: [
-      "../image/icon07.png",
-      "../image/icon08.png"
+      "image/icon07.png",
+      "image/icon08.png"
     ]
   }
   ,
@@ -257,9 +257,9 @@ const projects = [
     period: "5시간",
     workType: "교육 콘텐츠 인트로 영상",
     desc: "교육 콘텐츠 인트로 화면 영상 작업입니다.\nAfter Effects를 활용해 과하지 않으면서도 정적이지 않은 흐름으로 연출했습니다.\n플래시 작업 위주에서 처음 에펙으로 확장한 작업이었으며 모션과 타이밍에 대한 이해를 넓히는 계기가 되었습니다.",
-    image: "../image/한글 인트로.mp4",
+    image: "image/한글 인트로.mp4",
     icons: [
-      "../image/icon10.png"
+      "image/icon10.png"
     ]
   }    
 ];
