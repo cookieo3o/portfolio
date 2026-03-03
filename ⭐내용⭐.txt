@@ -1,0 +1,203 @@
+✨파일이 많은 폴더 github에 올릴 때✨
+git = 저장할 수 있게 만들어주는 프로그램
+파일 수정 변경 시 누가 무엇을 어떻게 기록해주는 것
+예전 상태로 돌릴 수 있다
+
+✨github✨
+
+github =보관함
+git status, git add
+
+0. 깃 설치
+
+명령 프롬프트에서 해야함
+
+1. 연결
+한 줄 씩 입력하고 엔터
+git config --global user.name "cookieo3o"
+git config --global user.email "cookieo3o620@gmail.com"
+
+git config --global user --list ← 잘 등록됐는 지 확인
+
+2. 저장소
+
+3. 올리기
+올릴 폴더 경로 변경
+C: \Users\Administrator> cd desktop
+C: \Users\Administrator\Desktop\cd 폴더명
+
+git init
+
+git status
+git add .
+git commit -m "first commit"
+
+git branch -M main
+git remote add origin 저장소url
+
+git push -u origin main
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+✨React✨
+
+cd desktop → 폴더 변경 바탕화면으로
+mkdir 폴더명 → 새 폴더 생성
+cd 폴더명 → 폴더로 이동
+npm create vite@latest → vite 프로젝트 생성 시작
+React 선택, js 버전 선택
+이후 질문 나오면 no 선택
+install → yes 설치
+✔설치가 안 됐을 경우 
+    VS CODE에서 npm run 적어서 설치
+code . → VS CODE에 파일 생성됨
+use vite 8beta → no안전 버전 선택
+
+VS CODE 열린 후 ―――――――――――――――――――――――――――――――――――――――――――――――――⭐
+
+VS CODE 열리면 cmd창 닫기
+새 터미널 열기 → 상단 메뉴에 있음
+VS CODE 하단에 Command Prompt 선택해서 cmd창 열기 
+npm run dev하면 폴더 경로가 나옴
+cltr 누른 후 폴더 클릭
+
+rafc → 생성 단축키
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+🍥React 함수 설명🍥
+
+onQtyChange → 수량이 바뀔 때 호출하는 함수 부모에서 전달해서 새 수량 인자로 받아 업데이트 해준다
+onDelete → 삭제 버튼클릭 시 card 삭제
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+✨CSS @import✨
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #eee;
+}
+
+/* Reset CSS */
+a { text-decoration: none; }
+h1,h2,h3,h4,h5,h6 { margin: 0; }
+button { cursor: pointer; outline: none; }
+
+
+✨리뉴얼 할 사이트✨
+https://www.knps.or.kr/portal/main.do
+
+header
+→nav
+main or div class=wrap
+→section
+footer
+
+flex
+
+피그마 속성 복붙 단축키
+ctrl + alt + c
+ctrl + alt + v
+
+모바일 폰트 사이즈 최소 13px
+웹 페이지 폰트 사이즈 최소 13px
+
+스타일 가이드 먼저 정하고 디자인 하기 - 컬러, 폰트
+🍥폰트
+    폰트 패밀리 (영문, 한글)
+    폰트 사이즈 (h1-h6, 본문, 서브 텍스트, 포인트)
+🍥컬러
+    primry, secondary
+    메인, 서브 명도 대비 기준으로 깔기
+
+그리드랑 버튼&아이콘&정의나 크기 꼭 넣어야 하는 지🥺
+
+체크 박스 before, after로 작업 가능
+hover는 가상 선택자 (before, after), 인접한 선택자, 자기 자신, 자식 요소, 형제 요소 (인접선택자)
+
+✨반응형 할 때 너비값이 px로 되어 있으면 안 됨 %로 바뀌어야 함
+
+
+기획 (이유)
+원래 있는 페이지를 더 좋은 페이지로 수정
+공공기관, 비영리단체
+
+회사소개
+
+웹사이트 분석
+→목적성, 사용성, 심미성, 서비스
+
+유사 사이트 및 경쟁 사이트 분석
+
+반응형 분석
+
+리뉴얼 방향
+
+스타일 가이드
+→컬러, 폰트
+
+와이어 프레임
+→디자인 하기 전
+
+스토리 보드
+
+사이트 맵
+
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+💥문제 잘 읽기💥오타 주의💥margin이랑 padding 헷갈리지 말기💥
+
+✨부모는 relative ✨자식은 absolute
+transform: translate(-50%, -50%) 
+
+🍥인라인 태그 
+     1. 너비 높이 적용이 안 됨
+     2. 컨텐츠 너비 값이 기본 너비
+     3. 한 줄에 여러 개 배치
+     4. 상하 마진은 안 되고 좌우 마진만 적용
+
+🍥블럭 태그 → (img, input, fontAwesome, 글자 태그 제외한 나머지 전부가 블럭)
+     1. 너비 높이 적용 가능
+     2. 컨텐츠 너비 값이 100%
+     3. 한 줄에 한 개만 배치
+     4. 상하 마진 적용 가능 (좌우 마진도 가능)
+
+🍥인라인 블럭 태그
+     1. 인라인처럼 한 줄에 여러 개 배치 가능
+     2. 너비 높이 적용 가능
+     3. 상하 마진 적용 가능
+
+a 태그는 인라인 블럭이라 너비 높이 적용이 안 되서 display이를 block으로 바꾸기
+
+가운데 놓고 싶을 때
+margin: auto; (좌우) margin: 20px auto; (상하ㆍ좌우)
+→ 남은 마진을 자동으로 해서 가운데로 오게 됨😊 
+✨display: flex; 값을 써야지 하단 값을 쓸 수 있다
+   ✔ align-content: flex-start; 
+         align-item →  개별 적용 align-content →  전체 적용
+   ✔ display: flex;
+         align-items: center;(수평 정렬) justify-content: center;(수직 정렬)
+
+✨vertical-align: top;
+     인라인 블록은 문자로 취급되서 상단이 안 맞을 때 줘야 상단이 맞음
+
+✨transform-origin: top center;
+     개체 중심값 이동
+
+✨box-sizing: border-box; box 크기에 맞게 효과 적용
+✨height: 100vh; - 보이는 값의 100%
+✨justify-content - 가로축
+✨align-items - 세로축
+✨object-fit: corver

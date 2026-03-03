@@ -1,0 +1,662 @@
+@import 'variable', 'mixin', 'common';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Escoredream';
+  font-weight: 300;
+  color: #333333;
+}
+
+/* 공통 부분 */
+#space {
+  letter-spacing: 60px;
+}
+
+.title {
+  position: relative;        
+  h3 {
+    @include title;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(/image/title-point.png);
+    z-index: 0;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 115px; 
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: $border;
+  background: #FFFFFF;
+  z-index: 500;
+  .header-inner {
+    width: 1440px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .nav {      
+      height: 114px;   
+      display: flex;
+      gap: 25px;
+      a {     
+        @include nav-btn;
+        flex: 1;
+        text-align: center;
+        line-height: 115px;
+        height: inherit;
+        display: block;
+        padding: 0px 20px;
+        &:first-child {
+          padding: 0px 40px;
+        }
+        border-inline: $border; 
+        transition: 0.3s;
+        &:hover {
+          background: #FD5087;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+.main-visual {
+  border-bottom: $border;
+  padding-top: 90px;
+  .logo-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 1672px;
+    height: 240px;
+    border: $border;
+    border-top: none;
+    border-right: none;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 0 auto;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      height: inherit;
+      position: relative;
+      border-right: $border;
+      img {
+        width: 380px;
+        height: 163px;       
+      }
+      svg {
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        width: 245px;
+        height: 190px;     
+        mix-blend-mode: multiply;
+        animation: logo 3s infinite alternate;
+      }
+      @keyframes logo {
+        0% {fill: #FF9BBE;}
+        50% {fill: #B4E1FF;}
+        100% {fill: #87E1D7;}
+      }
+    }
+    .logo-explain {
+      padding: 0 25px;      
+      strong {
+        font-weight: 500;
+      }
+    }
+    #wave {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+    }
+    .explain-line {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -10;
+    }
+  }
+
+  .inner {
+    padding: 145px 0;
+    border-left: $border;
+    background: url(/image/main-circle-bg01.svg) no-repeat left bottom;
+    .main-text-box {   
+      h2 {
+        margin-left: -10px;
+        font-size: 100px;        
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+      }
+      .text-point {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 70px;
+          height: 80px;
+          background: url(/image/main-point-figure.svg) no-repeat;
+          left: 575px;
+          bottom: 5px;
+          z-index: -5;
+        }
+      }
+      .text-mask {        
+        clip-path: inset(0% 0% 0% 0.8%); /* 사각형 영역 */
+        margin-top: 135px;
+      }
+    }
+  }
+}
+
+.circle-flower {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  padding-right: 50px;
+  position: absolute;
+  right: 45px;
+  top: calc(100% - -90px); //main-visual 기준
+  img {
+    display: block;
+    transform-origin: 50% 50%;
+    animation: circle-flower 5s linear infinite;
+  }
+}
+
+@keyframes circle-flower {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.profile-wrap {
+  width: 1440px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background: url(/image/profile-bg.png) no-repeat left top;
+  border: $border;
+  border-top: none;
+  border-bottom: none;
+  .photo-box {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    width: 565px;
+    .photo-img {      
+    }
+    .photo-txt {
+      @include desc;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+
+  .infomation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .info-card {
+      padding: 45px;
+      height: 550px;
+      background: #FFFFFF;
+      border: $border; 
+      border-bottom: none;
+      border-left: none;  
+      &:nth-child(2n) {
+        border-right: none;
+      }
+
+      .profile-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .description {
+          display: flex;
+          gap: 20px;
+          .subtitle {
+            @include sub-title;
+          }
+          .desc {
+            display: flex;
+            @include desc;
+          }
+        }
+        .description-long {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .subtitle {
+            @include sub-title;
+          }
+          .desc {
+            display: flex;
+            @include desc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.stack {
+  width: 1673px;
+  padding: 45px;
+  border: $border;
+  position: relative;
+  #wave02 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -20;
+  }
+  .stack-line {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    z-index: -10;
+  }
+  .inner { 
+    padding-left: 160px;
+    align-items: flex-start;
+    flex-direction: column;
+    .icon-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+}
+
+.project {
+  width: 1440px;
+  margin: 0 auto;
+  border: $border;
+  border-block: none;
+  position: relative;
+  background: #FFFFFF;
+  .inner {
+    border-bottom: $border;
+    padding: 50px 50px 0px 50px;
+    align-items: flex-start;   
+    flex-direction: column;    
+    .tab-box {
+      width: 100%;      
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 20px;
+      .tab {
+        @include button-txt;
+        flex: 1;
+        padding: 15px 50px;
+        text-align: center;
+        background: #FAFAFA;
+        border: $border;
+        transition: color 0.3s ease, background-color 0.5s ease;
+        &:hover, &.active {
+          color: #FFFFFF;        
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+        &:nth-child(1):hover, &:nth-child(1).active {
+          background: #A573DC;  
+        }
+        &:nth-child(2):hover, &:nth-child(2).active  {
+          background: #FF649B;  
+        }
+        &:nth-child(3):hover, &:nth-child(3).active {
+          background: #69AAFA;  
+        }
+        &:nth-child(4):hover, &:nth-child(4).active {
+          background: #69D791;  
+        }
+      }
+    }
+  }
+  .project-card-wrap{
+    width: 100%;   
+    .project-card {
+      display: flex;      
+      cursor: pointer;
+      border-bottom: $border;      
+      &:last-child {
+        border-bottom: none;
+      }
+      .card-left {
+        padding: 40px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: column;        
+        gap: 20px;
+        .card-logo {}
+        .card-title {
+          @include project-title;
+        }
+        .card-desc {
+          @include project-desc;
+        }
+        .card-responsive {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          @include project-res;          
+          img {}
+        }
+        .card-icon-box {
+          display: flex;
+          justify-content: space-between;          
+          margin-top: 65px;
+          .card-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img {
+              width: 40px;
+              height: 40px;
+            }
+            .icon-line {
+              display: flex;
+              gap: 10px;
+            }
+          }
+          .card-more {            
+            align-self: flex-end;            
+            img {
+              display: block;
+              transform: rotate(0deg);
+              transition: transform 0.3s ease;
+            }
+          }
+        }
+      }
+      .card-right {  
+        flex: 2;
+        border-left: $border;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }      
+     }
+    }
+    /* 카드 호버 시 더 보기 버튼 */
+    .project01:hover, .project02:hover, .project03:hover, .project04:hover, .project05:hover, .project06:hover, .project07:hover, .project08:hover {
+      .card-left {
+        .card-icon-box {
+          .card-more {
+            img {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+
+.project-flower {
+  position: absolute;
+  top: 30vh;
+  left: -200px;
+  overflow: hidden;
+  z-index: -10;
+  img {
+    display: block;
+    transform-origin: 50% 50%;
+    animation: projectflower 5s linear infinite;
+  }
+}
+
+@keyframes projectflower {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+.blank {
+  width: 100%;
+  height: 220px;
+  border: $border;
+  border-left: none;
+  border-right: none;
+  overflow-x: hidden;
+  .blank-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+    .blank-box {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      gap: 30px;
+      .blank-txt {
+        font-family: "Montserrat", sans-serif;
+        font-size: 150px;
+        font-weight: 500;
+        color: #BEBEBE;
+      }
+      .blank-flower {      
+        margin-top: 5px;
+        overflow: hidden;
+        img {
+        display: block;
+        transform-origin: 50% 50%;
+        animation: blankflower 5s linear infinite;
+        }
+      }
+      &:last-child {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes blankflower {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.footer {
+  padding: 45px 0;
+  border-bottom: $border;
+  .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    p {
+      font-size: 40px;
+      font-weight: 500;
+      color: #646464;
+    }
+  }
+}
+
+
+/* 탭 버튼 부분 active */
+.project-card-wrap {display: none;}
+#development.active, #design.active, #branding.active, #intro.active  {display: block;} 
+
+
+/* ⭐팝업창⭐*/
+.popup-area {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  .popup {
+    width: 1440px;
+    height: 805px;    
+    border: $border;
+    background: #FFFFFF;
+    display: flex;
+    position: relative;
+    .popup-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    .popup-left {
+      overflow-y: auto;
+      video {
+        width: 960px;
+        object-fit: cover;
+        padding-top: 14%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+      &::-webkit-scrollbar {
+        width: 20px;
+        background: #FFFFFF;
+        border: $border;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #A573DC;    
+        border: $border;
+      }
+    }
+    .popup-right {
+      margin-top: 50px;
+      border-top: $border;
+      flex: 1;
+      .popup-content-wrap {
+        border-bottom: $border; 
+        .popup-content {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 35px;
+          .popup-title {
+            @include project-title;    
+            margin-bottom: 10px;      
+          }
+          .popup-desc {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            .popup-desc-txt {
+              @include popup-desc;
+              display: flex; 
+            }
+          }
+          p {
+            @include popup-explain;       
+            &:nth-child(2) {
+              padding: 15px 0;
+            }
+          }
+        }
+
+        .popup-use-program {
+          .popup-icon-wrap {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            .popup-icon {
+              img {
+                width: 40px;
+                height: 40px
+              }
+            }
+          }
+        }
+      }
+
+      .popup-explain-wrap {      
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        height: 275px;
+        border-bottom: $border;
+        .popup-explain {
+          width: inherit;
+          display: flex;
+          flex-direction: column;
+          padding: 10px 35px;
+          gap: 20px;
+          p {
+            @include popup-explain;
+          }
+        }
+      }
+    }
+    .popup-button-wrap {
+      padding: 20px 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      .button-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        .popup-btn {
+          @include popup-btn;
+          padding: 10px 0px;
+          border: $border;
+          &:hover {
+            background: #FD5087;
+            color: #FFFFFF;
+          }
+        }
+        .site-shortcut {
+          background: #E1DCFF;
+        }
+      }
+      .popup-btn:only-child {
+        grid-column: 1 / -1; // 2칸 다 사용
+        justify-self: center; // 가운데 정렬
+        width: 50%; // 선택 (없어도 됨)
+      }
+    }
+  }
+}
+
+/* 팝업 공통 부분 */
+.popup-desc-title {
+  @include project-res;
+}
