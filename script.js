@@ -133,7 +133,7 @@ const projects = [
   {
     title: "국립공원단 리뉴얼",
     team: "1명",
-    period: "7일",
+    period: "10일",
     workType: "웹 - 반응형 구현",
     desc: "국립공원단 리뉴얼 프로젝트를 진행했습니다.\n디자인부터 퍼블리싱까지 전 과정을 맡으며 브랜드의 정체성을 유지하는 동시에 사용자 편의성을 높이는 방향으로 작업했습니다.\n이를 통해 브랜드 아이덴티티와 사용성의 균형에 대해 많은 것을 배울 수 있었습니다.",
     image: "image/popup-project01.png",
@@ -148,13 +148,15 @@ const projects = [
     ],
     buttons: [
       { text: "기획서", url: "https://www.figma.com/design/Ui8qBzNovI6ykrwsKE71ma/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=5hYdFnuahCrGSav0-1" },
-      { text: "사이트 바로가기", url: "https://cookieo3o.github.io/national-park/", class: "site-shortcut" }
+      { text: "사이트 바로가기", url: "https://cookieo3o.github.io/national-park/", class: "site-shortcut" },
+      { text: "GitHub", url: "https://github.com/cookieo3o/national-park" },
+      { text: "Figma", url: "https://www.figma.com/design/Ui8qBzNovI6ykrwsKE71ma/%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=yEPHYzFxXMzLkIvr-1" }
     ]
   },
   {
     title: "닌텐도 리뉴얼",
     team: "4명",
-    period: "10일",
+    period: "30일",
     workType: "웹 - 반응형 구현",
     desc: "닌텐도 리뉴얼 팀 프로젝트를 진행했습니다.\n팀원들과 협업해 다양한 아이디어를 반영하며 사용자 경험을 중심으로 구조를 개선하였습니다.\n이를 통해 협업의 중요성과 경험을 살린 설계에 대해 배울 수 있었습니다.",
     image: "image/popup-project02.png",
@@ -175,9 +177,9 @@ const projects = [
   {
     title: "그라운드 시소 리뉴얼",
     team: "1명",
-    period: "7일",
+    period: "15일",
     workType: "웹 - 반응형 미구현",
-    desc: "그라운드 시소 리뉴얼을 작업했습니다.\n 브랜드 의미를 반영해 컬러를 선택하여 로고를 리브랜딩하였습니다.\n전체 과정을 작업하며 디자인과 개발의 연결 흐름을 이해할 수 있었고 첫 프로젝트라 어려움도 있었지만 그 과정에서 기본적인 역량을 쌓으며 한 단계 성장할 수 있었습니다.",
+    desc: "그라운드 시소 리뉴얼을 작업했습니다.\n 브랜드 의미를 반영해 컬러를 선택하여 로고를 리브랜딩하고 보다 직관적이고 접근성 높은 디자인으로 개선했습니다.\n전체 과정을 작업하며 디자인과 개발의 연결 흐름을 이해할 수 있었고 첫 프로젝트라 어려움도 있었지만 그 과정에서 기본적인 역량을 쌓으며 한 단계 성장할 수 있었습니다.",
     image: "image/popup-project03.png",
     icons: [
       "image/icon01.png",
@@ -226,7 +228,7 @@ const projects = [
     team: "1명",
     period: "5일",
     workType: "리브랜딩",
-    desc: "'UMU’ 글자를 활용해 로고에 의미를 더하고 기존보다 귀엽고 활용도 높은 방향으로 디자인하여 다양한 매체에 적용될 수 있도록 확장성을 고려했습니다.\n 처음 진행한 로고 작업이라 어려움도 있었지만 브랜드를 시각적으로 풀어내는 과정에서 많은 것을 배울 수 있었습니다.",
+    desc: "우무 리브랜딩 프로젝트를 진행했습니다.\n'UMU’ 이니셜을 활용해 로고에 의미를 더하고, 기존보다 귀엽고 활용도 높은 방향으로 디자하여  다양한 매체에 적용될 수 있도록 확장성을 고려했습니다.\n 처음 진행한 로고 작업이라 어려움도 있었지만, 브랜드를 시각적으로 풀어내는 과정에서 많은 것을 배울 수 있었습니다.",
     image: "image/popup-project06.png",
     icons: [
       "image/icon07.png",
@@ -404,7 +406,4 @@ mobileLinks.forEach(link => {
     toggleBtn.classList.remove('active');
     document.body.classList.remove('menu-open');
   });
-
 });
-
-
