@@ -168,7 +168,7 @@ const projects = [
       "image/icon06.png"
     ],
     buttons: [
-      { text: "기획서", url: "https://www.figma.com/deck/6irwv1qNXooL2BzOl1OsOT/%EC%97%90%EC%8A%A4%ED%8C%8C-%EB%8B%8C%ED%85%90%EB%8F%84%EB%A6%AC%EB%89%B4%EC%96%BCppt?node-id=35-107&t=X6K4fdGySijgjSXt-1" },
+      { text: "기획서", url: "https://www.figma.com/deck/2hkRy8kETUx1tDq8r8znSL" },
       { text: "사이트 바로가기", url: "https://cookieo3o.github.io/nintendo-renewal/", class: "site-shortcut" },
       { text: "GitHub", url: "https://github.com/cookieo3o/nintendo-renewal" },
       { text: "Figma", url: "https://www.figma.com/design/SsP6DWrFjImVIl5autmaDN/%EC%97%90%EC%8A%A4%ED%8C%8C-%EB%8B%8C%ED%85%90%EB%8F%84%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=68126yaI9kY6Y6bp-1" }
@@ -407,3 +407,4 @@ mobileLinks.forEach(link => {
     document.body.classList.remove('menu-open');
   });
 });
+
