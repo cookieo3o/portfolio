@@ -269,15 +269,15 @@ const projects = [
     period: "10일",
     workType: "전자상거래 플랫폼 코딩",
     desc: "반응형 전자상거래 플랫폼을 학습하기 위해 프로젝트를 진행했습니다. \n이 작업을 통해 시맨틱 태그에 대한 개념을 이해하게 되었고 자바스크립트 기본 구조에 대해 이해할 수 있었습니다.",
-    image: "./image/popup-project09.png",
+    image: "image/popup-project09.png",
     icons: [
-      "./image/icon01.png",
-      "./image/icon02.png",
-      "./image/icon03.png",
-      "./image/icon04.png",
-      "./image/icon05.png",
-      "./image/icon06.png",
-      "./image/icon07.png"
+      "image/icon01.png",
+      "image/icon02.png",
+      "image/icon03.png",
+      "image/icon04.png",
+      "image/icon05.png",
+      "image/icon06.png",
+      "image/icon07.png"
     ]
     ,
     buttons: [      
@@ -430,6 +430,7 @@ mobileLinks.forEach(link => {
     document.body.classList.remove('menu-open');
   });
 });
+
 
 
 
