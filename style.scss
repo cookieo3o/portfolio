@@ -411,7 +411,7 @@ body {
      }
     }
     /* 카드 호버 시 더 보기 버튼 */
-    .project01:hover, .project02:hover, .project03:hover, .project04:hover, .project05:hover, .project06:hover, .project07:hover, .project08:hover {
+    .project01:hover, .project02:hover, .project03:hover, .project04:hover, .project05:hover, .project06:hover, .project07:hover, .project08:hover, .project09:hover  {
       .card-left {
         .card-icon-box {
           .card-more {
@@ -659,4 +659,5 @@ body {
 /* 팝업 공통 부분 */
 .popup-desc-title {
   @include project-res;
+
 }
