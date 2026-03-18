@@ -235,7 +235,7 @@ const projects = [
       "image/icon08.png"
     ],
     buttons: [
-      { text: "스타일 가이드", url: "https://cookieo3o.github.io/siso/umu%20style%20guide.pdf" }
+      { text: "CIP SISYTEM", url: "https://cookieo3o.github.io/siso/umu%20style%20guide.pdf" }
     ]
   } ,
   {
