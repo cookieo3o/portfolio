@@ -181,7 +181,7 @@ body {
   padding-right: 50px;
   position: absolute;
   right: 45px;
-  top: calc(100% - -90px); //main-visual 기준
+  top: calc(100% + 50px); //main-visual 기준
   img {
     display: block;
     transform-origin: 50% 50%;
