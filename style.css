@@ -80,6 +80,9 @@ button {
 
 @media (max-width: 768px) {
   /* 공통 부분 */
+  body {
+    overflow-x: hidden;
+  }
   .title {
     position: relative;
   }
@@ -122,7 +125,6 @@ button {
     line-height: 50px;
   }
   .main-visual {
-    padding-top: 50px;
     width: 100%;
   }
   .main-visual .logo-box {
@@ -823,7 +825,7 @@ body {
 
 .header {
   width: 100%;
-  height: 115px;
+  height: 90px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -840,7 +842,7 @@ body {
   justify-content: flex-end;
 }
 .header .header-inner .nav {
-  height: 114px;
+  height: inherit;
   display: flex;
   gap: 25px;
 }
@@ -851,9 +853,9 @@ body {
   color: #646464;
   flex: 1;
   text-align: center;
-  line-height: 115px;
   height: inherit;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0px 20px;
   border-inline: 2px solid #646464;
   transition: 0.3s;
@@ -868,7 +870,7 @@ body {
 
 .main-visual {
   border-bottom: 2px solid #646464;
-  padding-top: 90px;
+  padding-top: 65px;
 }
 .main-visual .logo-box {
   display: flex;
@@ -967,9 +969,10 @@ body {
   width: 70px;
   height: 80px;
   background: url(./image/main-point-figure.svg) no-repeat;
-  left: 575px;
+  mix-blend-mode: color-burn;
+  left: 577px;
   bottom: 5px;
-  z-index: -5;
+  z-index: 5;
 }
 .main-visual .inner .main-text-box .text-mask {
   -webkit-clip-path: inset(0% 0% 0% 0.8%);
@@ -984,7 +987,7 @@ body {
   padding-right: 50px;
   position: absolute;
   right: 45px;
-  top: calc(100% + 50px);
+  top: calc(100% + 25px);
 }
 .circle-flower img {
   display: block;
@@ -1240,7 +1243,7 @@ body {
      object-fit: cover;
   transition: transform 0.3s ease;
 }
-.project .project-card-wrap .project01:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project02:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project03:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project04:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project05:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project06:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project07:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project09:hover .card-left .card-icon-box .card-more img {
+.project .project-card-wrap .project01:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project02:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project03:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project04:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project05:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project06:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project07:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project09:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project10:hover .card-left .card-icon-box .card-more img {
   transform: rotate(90deg);
 }
 
