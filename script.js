@@ -177,7 +177,7 @@ const projects = [
   {
     title: "그라운드 시소 리뉴얼",
     team: "1명",
-    period: "7일",
+    period: "10일",
     workType: "웹 - 반응형 미구현",
     desc: "브랜드 의미를 반영하여 시선이 집중될 수 있게 메인 비주얼을 설계했습니다. \n브랜드 아이덴티티와 컬러를 기반으로 로고를 리디자인했습니다. \n첫 프로젝트에서 겪은 다양한 시행착오를 통해 기본 역량을 다지고 한 단계 성장할 수 있었습니다.",
     image: "./image/popup-project03.png",
@@ -266,7 +266,7 @@ const projects = [
   {
     title: "레고 스토어",
     team: "1명",
-    period: "10일",
+    period: "15일",
     workType: "전자상거래 플랫폼 코딩",
     desc: "반응형 전자상거래 플랫폼을 학습하기 위해 프로젝트를 진행했습니다. \n이 작업을 통해 시맨틱 태그에 대한 개념을 이해하게 되었고 자바스크립트 기본 구조에 대해 이해할 수 있었습니다.",
     image: "./image/popup-project09.png",
@@ -289,7 +289,7 @@ const projects = [
   {
     title: "BOOK STORE",
     team: "1명",
-    period: "20일",
+    period: "25일",
     workType: "리엑트 구현 및 학습",
     desc: "리엑트 학습을 위해 프로젝트를 진행했습니다. \n 처음에는 어렵게 느껴져 많은 시행착오를 겪었지만 이 학습을 통해 간단한 기능을 구현할 수 있게 되었습니다. ",
     image: "./image/popup-project10.png",
