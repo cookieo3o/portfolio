@@ -256,7 +256,10 @@ button {
     padding-left: 0;
   }
   .stack .inner .icon-wrap {
+    display: flex;
     gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
   }
   .stack .inner .icon-wrap .icon img {
     width: 55px;
@@ -571,7 +574,7 @@ button {
     width: 90%;
     margin: 0 auto;
     padding: 50px 0;
-    background: url(/image/main-circle-mb.png) no-repeat left bottom;
+    background: url(./image/main-circle-mb.png) no-repeat left bottom;
   }
   .main-visual .inner .main-text-box h2 {
     margin-left: -5px;
@@ -591,7 +594,7 @@ button {
     display: none;
   }
   .profile-wrap {
-    background: url(/image/profile-bg-mb.png) no-repeat left top;
+    background: url(./image/profile-bg-mb.png) no-repeat left top;
   }
   .profile-wrap .photo-box {
     width: 250px;
