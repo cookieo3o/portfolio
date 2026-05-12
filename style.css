@@ -100,7 +100,7 @@ button {
     display: block;
     width: 40px;
     height: 40px;
-    background: url(/image/title-point.png) center/contain;
+    background: url(./image/title-point.png) center/contain;
     z-index: 0;
   }
   .header {
