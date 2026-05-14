@@ -1,0 +1,799 @@
+@import 'mixin', 'variable';
+
+@media (max-width: 768px) {  
+/* 공통 부분 */
+  body {overflow-x: hidden;}
+  .title {
+    position: relative;       
+    h3 {
+      @include title-res;
+      margin-bottom: 30px;   
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url(./image/title-point.png) center / contain;
+      z-index: 0;
+    }
+  }  
+
+  .header {
+    height: 50px;
+    .header-inner {
+      width: 90%;
+      .nav {
+        height: 49px;
+        gap: 20px;
+        a { 
+          @include nav-btn-res;
+          height: inherit;
+          line-height: 50px;          
+        }
+      }
+    }
+  }
+
+  .main-visual {
+    width: 100%;   
+    padding-top: 0;
+    .logo-box {
+      width: 95%;
+      height: 240px;
+      font-size: 25px;
+      line-height: 35px;
+      margin: 0 0 0 auto;
+      .logo {
+        width: 50%;
+        padding: 0 20px;
+        img {
+          width: 300px;
+          height: 150px;
+        }
+        svg {
+          top: 5px;
+          left: 20px;
+          width: 190px;
+          height: 210px;
+        }
+      }
+      #wave {
+      top: 120px;
+      right: 0;
+      width: 110px;
+      height: 120px;
+    }
+    .explain-line {
+      width: 195px;
+      height: 128px;
+    }
+    .logo-explain {
+      padding: 0 30px;
+      text-align: justify;
+      p:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+
+    .inner {
+      width: 90%;
+      margin: 0 auto;
+      padding: 130px 0;
+      .main-text-box {
+        h2 {
+          font-size: 80px;        
+          font-weight: 500;
+        }
+        .text-point {
+          &::after {
+            width: 40px;
+            height: 50px;
+            background-size: contain;
+            left: 470px;
+            bottom: 10px;
+          }
+        }
+        .text-mask {
+          clip-path: inset(0% 0% 0% 1.1%);
+        }
+      }
+    }
+  }
+
+  .circle-flower {
+    padding-right: 0;
+    right: -145px;
+    top: calc(100% + 250px); //main-visual 기준
+  }
+
+  .profile-wrap {
+  width: 90%;
+    .photo-box {
+      width: 500px;
+      .photo-img {
+        img {
+          width: 100%;
+        }
+      }
+      .photo-txt {
+        @include popup-desc;
+        padding: 0 30px;
+      }
+    }
+
+    .infomation {
+      width: 100%;
+      .info-card {
+        padding: 25px;
+        height: 395px;
+
+        .profile-desc {
+          gap: 20px;
+          .description {
+            display: flex;
+            gap: 15px;
+            .subtitle {
+              @include sub-title-res;
+              letter-spacing: -1px;
+              flex-shrink: 1;
+            }
+            .desc {
+              @include desc-res;
+              width: 170px;
+            }            
+          }
+          .description-long {
+            .subtitle {
+              @include sub-title-res;
+            }
+            .desc {
+              @include desc-res;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .stack {
+    width: 100%; 
+    padding: 30px;
+    #wave02 {
+      left: -5px;
+      width: 145px;
+      height: 130px;
+    }
+    .stack-line {
+      width: 200px;
+      height: 140px;
+    }
+    .inner {
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 0;
+      .icon-wrap {
+        gap: 15px;
+        .icon {
+          img {
+            width: 55px;
+            height: 55px;
+          }
+        }
+      }
+    }
+  }
+
+  .project {
+    width: 100%;
+    .inner {
+      width: 90%;
+      padding: 30px 30px 0px 30px;
+      border-bottom: none;
+      .tab-box {
+        gap: 10px;
+        .tab {
+          @include button-txt-res;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    .project-card-wrap {
+      border-top: $border;   
+      .project03 {
+        .card-logo {
+          img {
+            height: 30px;  //원하는 크기로 조절
+            width: auto;  //비율 유지
+          }
+        }
+      }
+      .project-card {
+        width: 100%;
+        height: 450px;
+        .card-left{
+          padding: 30px;
+          .card-title {
+            @include project-title-res;
+          }
+          .card-desc {
+            @include project-desc-res;
+            text-align: justify;
+          }
+          .card-responsive{
+            @include project-res-res; 
+          }
+          .card-icon-box {
+            margin-top: 40px;
+            .card-icon {
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              .icon-line {
+                gap: 5px;
+              }
+            }
+
+            .card-more {
+              img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project-flower {
+    display: none;
+  }
+
+  /* 팝업창 */
+  .popup-area {
+    .popup {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      display: flex;
+      .popup-close {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .popup-left {
+        width: 50%;
+        border-right: $border;
+        video {
+          width: 378px;
+          padding-top: 50%;
+          object-fit: cover;
+        }
+        img {          
+          max-width: 100%;
+        }
+        &::-webkit-scrollbar {
+          width: 15px;
+          border-right: none;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-right: none;
+        }
+      }
+
+      .popup-right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-height: 0;
+        margin-top: 0;
+        padding-top: 40px;        
+        .popup-content-wrap {
+          flex-shrink: 0;
+          border-top: $border;
+          .popup-content {
+            padding: 20px;
+            .popup-title {
+              @include project-title-res;  
+              margin-bottom: 15px; 
+            }
+            .popup-desc {
+              margin-bottom: 10px;
+              .popup-desc-title {
+                @include project-res-res;
+              }
+              .popup-desc-txt {
+                @include popup-desc-res;
+              }
+            }
+          }
+
+         .popup-use-program {
+            .popup-desc-title {
+              @include project-res-res;
+            }
+            .popup-desc-txt {
+              @include popup-desc-res;
+            }    
+             .popup-icon-wrap {
+              gap: 10px;
+              .popup-icon {
+              }
+            }          
+          }                    
+        }
+
+        .popup-explain-wrap {
+          max-height: 170px;
+          overflow-y: auto;          
+          box-sizing: border-box;        
+            &::-webkit-scrollbar {
+              width: 15px;
+              background: #FFFFFF;
+              border: $border;
+              border-right: none;
+            }
+            &::-webkit-scrollbar-thumb {
+              background: #69D791;    
+              border: $border;      
+              border-right: none;        
+            }            
+          .popup-explain {      
+            padding: 20px;
+            height: 170px; 
+            p:last-child {
+              padding-bottom: 20px;
+            } 
+          }
+      }
+      .popup-button-wrap {
+        flex-shrink: 0;
+        padding: 0px 20px;
+        height: 110px;
+        .button-box {
+          .popup-btn {
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  }  
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main-visual {
+    .logo-box {
+      .logo-explain {
+        text-align: left;
+      }
+    }
+  }
+
+  .infomation {
+    width: 100%;
+      .info-card {
+        padding: 25px;
+        height: 395px;
+
+        .profile-desc {
+          gap: 20px;
+          .description {
+            display: flex;
+            gap: 105px;
+            .subtitle {
+              @include sub-title-res;
+              letter-spacing: -1px;
+              flex-shrink: 1;
+            }
+            .desc {
+              @include desc-res;
+              width: 170px;
+            }            
+          }
+          .description-long {
+            .subtitle {
+              @include sub-title-res;
+            }
+            .desc {
+              @include desc-res;
+            }
+          }
+        }
+      }
+  }
+
+  .stack {
+      .inner {
+        .icon-wrap {
+          gap: 20px;  
+          .icon {
+            width: 40px;
+            height: 40px;  
+            img {
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+  }
+
+  /* ⭐️모바일 메뉴⭐️ */
+  .mobile-nav {
+    width: 100%;
+    height: 40px;    
+    position: fixed;    
+    background: #FFFFFF;
+    box-sizing: border-box;
+    z-index: 2000;
+    display: flex;    
+    border-bottom: $border;
+    .mobile-nav-inner {
+      width: 90%;      
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+      .mobile-nav-tab {
+        display: flex;
+        gap: 5px;        
+        a {
+          display: block;
+          padding: 0 10px;
+          line-height: 40px;
+          border-inline: $border;
+          @include nav-btn-res;
+          font-size: 25px;
+        }        
+      }
+      .toggle {
+        cursor: pointer;
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          transform: rotate(0deg);     
+          transition: transform 0.3s ease;     
+        }
+        &:active img, &.active img {
+          transform: rotate(45deg);
+        }        
+      }
+    }
+  }
+
+  .mobile-menu {   
+    position: fixed;
+    left: 0;
+    right: 0%;
+    top: 40px;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+    transform: translateX(100%);
+    z-index: 1500;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    &.active {
+      width: 100%;
+      transform: translateX(0);
+      opacity: 1;
+    }
+    a {
+      display: block;
+      padding: 25px 0;
+      text-align: center;
+      @include mobile-memu;
+      border-bottom: $border;
+      transition: 0.3s;
+      &:active {
+        font-size: 21px;
+      }
+    }
+  }
+
+  /* 본문 */
+  .main-visual {
+    padding-top: 40px;
+    .logo-box {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      flex-direction: column;
+      border-bottom: $border;
+      .logo {
+        width: 100%;
+        height: 150px;
+        border-bottom: $border;
+        img {
+          width: 200px;
+          height: 100px;
+        }
+        svg {
+          top: -40px;
+          left: 75px;
+          width: 125px;
+          height: 215px;
+        }
+      }
+      .logo-explain {
+        width: 100%;
+        padding: 20px;
+        border-right: $border;
+        position: relative;
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 2px;
+          bottom: -2px;
+          right: -25px;
+          background: #646464;
+        }
+      }
+      #wave {
+        top: 258px;
+      }
+    }
+
+    .inner {
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0;
+      background: url(./image/main-circle-mb.png) no-repeat left bottom;
+      .main-text-box {        
+        h2 {
+          margin-left: -5px;
+          font-size: 50px;
+          line-height: 80px;
+        }
+        .text-point {
+          &::after {
+            width: 30px;
+            height: 40px;
+            left: 290px;
+            bottom: 10px;
+          }
+        }
+
+        .text-mask {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  .circle-flower {
+    display: none;
+  }
+
+  .profile-wrap {
+    background: url(/image/profile-bg-mb.png) no-repeat left top;
+    .photo-box {
+      width: 250px;
+      margin-bottom: 50px;
+      .photo-img {
+        width: 250px;
+        height: 250px;
+      }
+      .photo-txt {
+        font-size: 20px;
+        padding: 0;
+        margin-top: 20px;
+      }
+    }
+
+    .infomation {
+      width: 100%;
+      grid-template-columns: 1fr;    
+      .info-card {
+        width: 100%;
+        border: none;
+        border-top: $border;
+        &:first-child {
+          height: 205px;
+        }
+      }
+    }
+  }
+
+  .stack {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    .stack-line {
+      display: none;
+    }
+  }
+
+  .project {
+    width: 90%;
+    margin: 0 auto;
+    .inner {
+      width: 100%;
+      padding: 20px 30px 0px 30px;
+      .tab-box {
+        gap: 5px;
+        .tab {
+          @include button-txt-res;
+          font-size: 15px;
+          line-height: 15px;
+          padding: 5px 0px;
+        }
+      }
+    }
+
+    .project-card-wrap {
+      .project-card {
+        flex-direction: column-reverse;
+        height: auto;
+        .card-right {
+          border-left: none;
+          border-bottom: $border;
+          img {
+            display: block;
+            border: none;
+          }
+        }
+        .card-left {
+          width: 100%;
+          gap: 10px;
+          padding: 25px;          
+          .card-title {
+            font-size: 20px;
+          }
+          .card-desc {
+            font-size: 15px;
+          }
+          .card-responsive {
+            gap: 10px;
+            font-size: 15px;
+            align-items: normal;
+            img {
+              height: 15px;
+            }
+          }
+          .card-icon-box {
+            margin-top: 30px;
+            .card-more {
+              img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blank {
+    width: 100%;
+    height: 130px;
+    .blank-track {
+      height: inherit;
+      .blank-box {
+        .blank-txt {
+          font-size: 80px;
+        }
+        .blank-flower {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .blank-logo {
+          img {
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-wrap {
+      p {
+        font-size: 25px;
+      }
+      img {
+        width: 90px;
+      }
+    }
+  }
+
+  /* ⭐팝업창⭐ */
+  .popup-area {
+    width: 100%;
+    .popup {
+      width: 100%;
+      max-height: calc(100vh - 30px);
+      margin-top: 35px;
+      border: none;
+      flex-direction: column;
+      .popup-close {
+        position: static;
+        align-self: flex-end;
+        padding: 5px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .popup-left {
+        width: inherit;
+        height: calc(100vh - 360px);
+        border: none;
+        border-block: $border;
+        &::-webkit-scrollbar {
+          width: 20px;
+          background: #FFFFFF; 
+        }
+      }
+      .popup-right {
+        width: 100%;
+        border-top: none;
+        padding: 0;
+        .popup-content-wrap {
+          border: none;
+          .popup-content {
+            gap: 5px;
+            padding: 10px 20px;
+            border-bottom: $border;
+            .popup-title {
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            .popup-desc {
+              margin-bottom: 0px;
+              .popup-desc-title {font-size: 16px;}
+              .popup-desc-txt {font-size: 16px;}
+            }
+            .popup-use-program {
+              .popup-desc-title {
+                font-size: 16px;
+              }
+              .popup-icon-wrap {
+                .popup-icon {
+                  img {
+                    width: 30px; height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .popup-explain-wrap {
+          display: none;
+        }
+        .popup-button-wrap {
+          height: 95px;
+          .button-box {
+            .popup-btn {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
