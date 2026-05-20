@@ -1,0 +1,141 @@
+@mixin nav-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #646464;
+}
+
+@mixin nav-btn-res {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #646464;
+}
+
+@mixin title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+@mixin title-res {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+@mixin sub-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #735A96;
+}
+
+@mixin sub-title-res {
+  font-size: 18px;
+  font-weight: 500;
+  color: #735A96;
+}
+
+@mixin desc {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@mixin desc-res {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin button-txt {
+  font-size: 30px;
+  font-weight: 500;
+  color: #646464;
+}
+
+@mixin button-txt-res {
+  font-size: 20px;
+  font-weight: 500;
+  color: #646464;
+}
+
+@mixin project-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+}
+
+@mixin project-title-res {
+  font-size: 25px;
+  font-weight: 500;
+  color: #333333;
+}
+
+@mixin project-desc {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin project-desc-res {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin project-res {
+  font-size: 25px;
+  font-weight: 500;
+  color: #735A96;
+}
+
+@mixin project-res-res {
+  font-size: 20px;
+  font-weight: 500;
+  color: #735A96;
+}
+
+@mixin popup-desc {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin popup-desc-res {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin popup-explain {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333333;
+  text-align: justify;
+}
+
+@mixin popup-explain-res {
+  font-size: 16px;
+  font-weight: 300;
+  color: #333333;
+  text-align: justify;
+}
+
+@mixin popup-btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: #646464;
+}
+
+@mixin mobile-memu {
+  font-size: 20px;
+  font-weight: 500;
+  color: #646464;
+}
