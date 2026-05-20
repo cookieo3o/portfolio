@@ -927,7 +927,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  width: 1672px;
+  width: 100%;
   height: 240px;
   border: 2px solid #646464;
   border-top: none;
@@ -952,7 +952,7 @@ body {
 .main-visual .logo-box .logo svg {
   position: absolute;
   top: 10px;
-  left: 60px;
+  left: 90px;
   width: 245px;
   height: 190px;
   mix-blend-mode: multiply;
