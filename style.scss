@@ -269,7 +269,7 @@ body {
 }
 
 .stack {
-  width: 1673px;
+  width: 100%;
   padding: 45px;
   border: $border;
   position: relative;
@@ -286,7 +286,7 @@ body {
     z-index: -10;
   }
   .inner { 
-    padding-left: 160px;
+    margin-left: 100px;
     align-items: flex-start;
     flex-direction: column;
     .icon-wrap {

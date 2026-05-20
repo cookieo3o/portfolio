@@ -107,9 +107,7 @@
     clip-path: inset(0% 0% 0% 1.1%);
   }
   .circle-flower {
-    padding-right: 0;
-    right: -145px;
-    top: calc(100% + 250px);
+    display: none;
   }
   .profile-wrap {
     width: 90%;

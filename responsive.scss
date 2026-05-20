@@ -106,9 +106,7 @@
   }
 
   .circle-flower {
-    padding-right: 0;
-    right: -145px;
-    top: calc(100% + 250px); //main-visual 기준
+    display: none;
   }
 
   .profile-wrap {
@@ -428,8 +426,8 @@
         gap: 10px;
         .icon {
           img {
-            width: 30px; !important;
-            height: 30px; !important;
+            width: 30px;
+            height: 30px;
           }
         }
       }
