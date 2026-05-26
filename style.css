@@ -838,6 +838,7 @@ body {
   font-family: "Escoredream";
   font-weight: 300;
   color: #333333;
+  overflow-x: hidden;
 }
 
 /* 공통 부분 */
@@ -970,10 +971,14 @@ body {
   }
 }
 .main-visual .logo-box .logo-explain {
-  padding: 0 25px;
+  padding: 0 30px;
+  line-height: 45px;
 }
 .main-visual .logo-box .logo-explain strong {
   font-weight: 500;
+}
+.main-visual .logo-box .logo-explain p:first-of-type {
+  padding-bottom: 20px;
 }
 .main-visual .logo-box #wave {
   position: absolute;

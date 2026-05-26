@@ -8,6 +8,7 @@ body {
   font-family: 'Escoredream';
   font-weight: 300;
   color: #333333;
+  overflow-x: hidden;
 }
 
 /* 공통 부분 */
@@ -122,9 +123,13 @@ body {
       }
     }
     .logo-explain {
-      padding: 0 25px;      
+      padding: 0 30px;      
+      line-height: 45px;
       strong {
         font-weight: 500;
+      }
+      p:first-of-type {
+        padding-bottom: 20px;
       }
     }
     #wave {
