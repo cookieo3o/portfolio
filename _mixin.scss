@@ -77,7 +77,7 @@
 }
 
 @mixin project-desc {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   color: #333333;
@@ -91,7 +91,7 @@
 }
 
 @mixin project-res {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #735A96;
 }
@@ -103,7 +103,7 @@
 }
 
 @mixin popup-desc {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   color: #333333;
 }
@@ -115,8 +115,9 @@
 }
 
 @mixin popup-explain {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 25px;
   color: #333333;
   text-align: justify;
 }

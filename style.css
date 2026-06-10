@@ -198,7 +198,7 @@ button {
     width: 100%;
   }
   .profile-wrap .photo-box .photo-txt {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     color: #333333;
     padding: 0 30px;
@@ -1224,7 +1224,7 @@ body {
   color: #333333;
 }
 .project .project-card-wrap .project-card .card-left .card-desc {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   color: #333333;
@@ -1233,7 +1233,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #735A96;
 }
@@ -1277,6 +1277,9 @@ body {
 }
 .project .project-card-wrap {
   /* 카드 호버 시 더 보기 버튼 */
+}
+.project .project-card-wrap .project11:hover {
+  cursor: not-allowed;
 }
 .project .project-card-wrap .project01:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project02:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project03:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project04:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project05:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project06:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project07:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project09:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project10:hover .card-left .card-icon-box .card-more img {
   transform: rotate(90deg);
@@ -1444,7 +1447,7 @@ body {
 .popup-area .popup .popup-right .popup-content-wrap .popup-content {
   display: flex;
   flex-direction: column;
-  padding: 20px 35px;
+  padding: 15px 35px;
 }
 .popup-area .popup .popup-right .popup-content-wrap .popup-content .popup-title {
   font-size: 30px;
@@ -1458,14 +1461,15 @@ body {
   margin-bottom: 20px;
 }
 .popup-area .popup .popup-right .popup-content-wrap .popup-content .popup-desc .popup-desc-txt {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   color: #333333;
   display: flex;
 }
 .popup-area .popup .popup-right .popup-content-wrap .popup-content p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 25px;
   color: #333333;
   text-align: justify;
 }
@@ -1492,23 +1496,24 @@ body {
   width: inherit;
   display: flex;
   flex-direction: column;
-  padding: 10px 35px;
+  padding: 15px 35px;
   gap: 20px;
 }
 .popup-area .popup .popup-right .popup-explain-wrap .popup-explain p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 25px;
   color: #333333;
   text-align: justify;
 }
 .popup-area .popup .popup-button-wrap {
-  padding: 20px 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 140px;
 }
 .popup-area .popup .popup-button-wrap .button-box {
+  padding: 20px 35px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1536,7 +1541,7 @@ body {
 
 /* 팝업 공통 부분 */
 .popup-desc-title {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #735A96;
 }/*# sourceMappingURL=style.css.map */

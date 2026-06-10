@@ -417,6 +417,9 @@ body {
      }
     }
     /* 카드 호버 시 더 보기 버튼 */
+    .project11:hover{
+      cursor: not-allowed;
+    }
     .project01:hover, .project02:hover, .project03:hover, .project04:hover, .project05:hover, .project06:hover, .project07:hover, .project09:hover, .project10:hover {
       .card-left {
         .card-icon-box {
@@ -574,7 +577,7 @@ body {
         .popup-content {
           display: flex;
           flex-direction: column;
-          padding: 20px 35px;
+          padding: 15px 35px;
           .popup-title {
             @include project-title;    
             margin-bottom: 10px;      
@@ -621,7 +624,7 @@ body {
           width: inherit;
           display: flex;
           flex-direction: column;
-          padding: 10px 35px;
+          padding: 15px 35px;
           gap: 20px;
           p {
             @include popup-explain;
@@ -629,13 +632,13 @@ body {
         }
       }
     }
-    .popup-button-wrap {
-      padding: 20px 35px;
+    .popup-button-wrap {     
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 120px;
+      height: 140px;
       .button-box {
+        padding: 20px 35px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
