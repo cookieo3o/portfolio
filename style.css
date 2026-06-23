@@ -1279,9 +1279,9 @@ body {
   /* 카드 호버 시 더 보기 버튼 */
 }
 .project .project-card-wrap .project11:hover {
-  cursor: not-allowed;
+  cursor: url("/image/cursor.png"), auto;
 }
-.project .project-card-wrap .project01:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project02:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project03:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project04:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project05:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project06:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project07:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project09:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project10:hover .card-left .card-icon-box .card-more img {
+.project .project-card-wrap .project01:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project02:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project03:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project04:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project05:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project06:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project07:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project08:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project09:hover .card-left .card-icon-box .card-more img, .project .project-card-wrap .project10:hover .card-left .card-icon-box .card-more img {
   transform: rotate(90deg);
 }
 
