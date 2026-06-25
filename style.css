@@ -1059,17 +1059,18 @@ body {
   border-bottom: none;
 }
 .profile-wrap .photo-box {
-  margin-bottom: 75px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 565px;
 }
-.profile-wrap .photo-box .photo-txt {
+.profile-wrap .photo-txt {
   font-size: 30px;
   font-weight: 400;
-  padding: 0 20px;
   text-align: center;
+  line-height: 40px;
+  margin-bottom: 60px;
 }
 .profile-wrap .infomation {
   width: 100%;
