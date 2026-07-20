@@ -307,6 +307,23 @@ const projects = [
     buttons: [      
       { text: "사이트 바로가기", url: "https://69b8e0cf2f6e526d0106d4fa--bookstore-renewal.netlify.app/", class: "site-shortcut" }
     ]
+  }
+  ,
+  {
+    title: "Oh! My Pudding",
+    team: "1명",
+    period: "작업 진행 중...💭",
+    workType: "개인 브랜드 브랜딩",
+    desc: "Oh! My Pudding은 이름 그대로 ‘오! 귀여운 나의 푸딩’ 이란 느낌의 감탄사를 염두에 두어지었습니다. \n 각각 다른 성격과 외형을 가진 푸딩 친구들의 굿즈와 그 푸딩들을 맛볼 수 있게 카페까지 같이 운영되는 걸 생각하며 작업 진행 중입니다. ",
+    image: "./image/popup-project11.png",
+    icons: [
+      "./image/icon07.png",
+      "./image/icon08.png",
+      "./image/icon14.png"
+    ]
+    ,
+    buttons: [      
+    ]
   }       
 ];
 
