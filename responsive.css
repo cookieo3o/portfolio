@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* 맥북 14인치 */
+@media (max-width: 1513px) {
+  .main-visual .logo-box .logo svg {
+    left: 30px;
+  }
+}
 @media (max-width: 768px) {
   /* 공통 부분 */
   body {

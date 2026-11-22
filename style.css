@@ -78,6 +78,12 @@ button {
   font-family: inherit;
 }
 
+/* 맥북 14인치 */
+@media (max-width: 1513px) {
+  .main-visual .logo-box .logo svg {
+    left: 30px;
+  }
+}
 @media (max-width: 768px) {
   /* 공통 부분 */
   body {
@@ -916,13 +922,13 @@ button {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Escoredream";
   font-weight: 300;
   color: #333333;
-  overflow-x: hidden;
 }
 
 /* 공통 부분 */
@@ -1037,7 +1043,7 @@ body {
 .main-visual .logo-box .logo svg {
   position: absolute;
   top: 10px;
-  left: 30px;
+  left: 95px;
   width: 245px;
   height: 190px;
   mix-blend-mode: multiply;
