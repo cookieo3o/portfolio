@@ -158,7 +158,7 @@ const projects = [
     team: "4명",
     period: "30일",
     workType: "웹 - 반응형 구현",
-    desc: "팀원들과 협업해 다양한 아이디어를 반영하며 사용자 경험을 중심으로 구조를 개선하였습니다. \n메인 페이지에서는 NEWS와 SOFTWARE 부분을 디자인하였으며 SOFTWARE· VIDEO· STORE 부분을 구현하였습니다. \n서브 페이지는 SOFTWARE의 커비·PLAY VIDEO 그리고 고객지원에 스위치1을 구현 및 디자인하였습니다.",
+    desc: "팀원들과 협업해 다양한 아이디어를 반영하며 사용자 경험을 중심으로 구조를 개선하였습니다. \n메인 페이지에서는 NEWS와 SOFTWARE 부분을 디자인하였으며 SOFTWARE· VIDEO· STORE 부분을 구현하였습니다. \n서브 페이지는 SOFTWARE의 커비·PLAY VIDEO 그리고 고객지원에 스위치1을 구현 및 디자인하였고 기획서 전체 디자인하였습니다.",
     image: "./image/popup-project02.png",
     icons: [
       "./image/icon01.png",
