@@ -100,10 +100,10 @@ body {
       align-items: center;
       justify-content: center;
       width: 30%;
-      height: inherit;
-      position: relative;
+      height: inherit;      
       border-right: $border;
       img {
+        position: relative;
         width: 380px;
         height: 163px;       
       }

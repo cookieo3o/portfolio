@@ -61,14 +61,14 @@
     padding: 0 20px;
   }
   .main-visual .logo-box .logo img {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: auto;
   }
   .main-visual .logo-box .logo svg {
-    top: 5px;
+    top: 65px;
     left: 20px;
-    width: 190px;
-    height: 210px;
+    width: 125px;
+    height: auto;
   }
   .main-visual .logo-box #wave {
     top: 120px;
@@ -83,6 +83,8 @@
   .main-visual .logo-box .logo-explain {
     padding: 0 30px;
     text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
   }
   .main-visual .logo-box .logo-explain p:last-child {
     margin-top: 10px;
