@@ -373,7 +373,6 @@ body {
           flex-direction: column;
           gap: 15px;
           width: 100%;
-          border: solid 1px red;
           padding-top: 60px;
           .contribution-title {
             display: flex;
@@ -400,7 +399,6 @@ body {
             align-items: center; 
             .contribution-txt {
               @include project-desc;              
-              border: solid 1px red;
               width: 20%;
               font-size: 25px;
             }

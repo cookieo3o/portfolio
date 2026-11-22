@@ -1229,7 +1229,6 @@ body {
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  border: solid 1px red;
   padding-top: 60px;
 }
 .project .project-card-wrap .project-card .card-left .contribution-box .contribution-title {
@@ -1263,7 +1262,6 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: #333333;
-  border: solid 1px red;
   width: 20%;
   font-size: 25px;
 }
