@@ -368,20 +368,73 @@ body {
         .card-title {
           @include project-title;
         }
-        .card-desc {
-          @include project-desc;
-        }
-        .card-responsive {
+        .contribution-box {
           display: flex;
-          align-items: center;
-          gap: 10px;
-          @include project-res;          
-          img {}
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+          border: solid 1px red;
+          padding-top: 60px;
+          .contribution-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            gap: 10px;
+            .responsive-badge {
+              padding: 5px;
+              background: #FD5087;
+              border-radius: 5px;
+              color: white;
+              font-size: 15px;
+              font-weight: 400;
+            }
+            .card-desc {
+              @include project-res;
+              font-size: 25px;
+            }
+          }
+          .contribution {
+            width: inherit;
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            .contribution-txt {
+              @include project-desc;              
+              border: solid 1px red;
+              width: 20%;
+              font-size: 25px;
+            }
+            .contribution-percent {
+              width: 80%;
+              height: 25px;
+              background: #FAFAFA;
+              border: solid 1px #646464;
+              position: relative;
+              .percent-color {
+                position: absolute;
+                position: relative;
+                width: var(--percent, 100%);
+                height: 24px;
+                top: 0;
+                left: 0;
+                background: #646464;
+                .percent-txt {
+                  position: absolute;
+                  top: 3px;
+                  right: 3px;
+                  font-size: 15px;
+                  font-weight: 400;
+                  color: white;
+                }
+              }
+            }
+          }
         }
+        
         .card-icon-box {
           display: flex;
           justify-content: space-between;          
-          margin-top: 65px;
+          margin-top: 60px;
           .card-icon {
             display: flex;
             flex-direction: column;
