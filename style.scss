@@ -217,8 +217,6 @@ body {
     justify-content: center;
     flex-direction: column;   
     width: 565px;
-    .photo-img {      
-    }
   }
   .photo-txt {
     @include desc;
@@ -364,7 +362,6 @@ body {
         justify-content: center;
         flex-direction: column;        
         gap: 20px;
-        .card-logo {}
         .card-title {
           @include project-title;
         }
