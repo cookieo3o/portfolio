@@ -288,42 +288,125 @@ button {
     width: auto;
   }
   .project .project-card-wrap .project-card {
-    width: 100%;
-    height: 450px;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 2px solid #646464;
+  }
+  .project .project-card-wrap .project-card:last-child {
+    border-bottom: none;
   }
   .project .project-card-wrap .project-card .card-left {
-    padding: 30px;
+    flex: 1;
+    padding: 40px;
+  }
+  .project .project-card-wrap .project-card .card-left .card-logo img {
+    width: 50px;
   }
   .project .project-card-wrap .project-card .card-left .card-title {
     font-size: 25px;
-    font-weight: 500;
-    color: #333333;
   }
-  .project .project-card-wrap .project-card .card-left .card-desc {
+  .project .project-card-wrap .project-card .card-left .contribution-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution-title .responsive-badge {
+    padding: 5px;
+    background: #FD5087;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution-title .card-desc {
+    font-size: 20px;
+    font-weight: 500;
+    color: #735A96;
+    font-size: 20px;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-txt {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     color: #333333;
-    text-align: justify;
+    width: 20%;
+    font-size: 18px;
   }
-  .project .project-card-wrap .project-card .card-left .card-responsive {
-    font-size: 20px;
-    font-weight: 500;
-    color: #735A96;
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-percent {
+    width: 80%;
+    height: 25px;
+    background: #FAFAFA;
+    border: solid 1px #646464;
+    position: relative;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-percent .percent-color {
+    position: absolute;
+    position: relative;
+    width: var(--percent, 100%);
+    height: 24px;
+    top: 0;
+    left: 0;
+    background: #646464;
+  }
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-percent .percent-color .percent-txt {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
   }
   .project .project-card-wrap .project-card .card-left .card-icon-box {
-    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .project .project-card-wrap .project-card .card-left .card-icon-box .card-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .project .project-card-wrap .project-card .card-left .card-icon-box .card-icon img {
     width: 30px;
     height: 30px;
   }
   .project .project-card-wrap .project-card .card-left .card-icon-box .card-icon .icon-line {
-    gap: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  .project .project-card-wrap .project-card .card-left .card-icon-box .card-more {
+    align-self: flex-end;
   }
   .project .project-card-wrap .project-card .card-left .card-icon-box .card-more img {
-    width: 40px;
-    height: 40px;
+    display: block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  .project .project-card-wrap .project-card .card-right {
+    flex: 1;
+    border-left: 2px solid #646464;
+    overflow: hidden;
+  }
+  .project .project-card-wrap .project-card .card-right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: transform 0.3s ease;
   }
   .project-flower {
     display: none;
@@ -716,16 +799,15 @@ button {
   .project .project-card-wrap .project-card .card-left .card-title {
     font-size: 20px;
   }
-  .project .project-card-wrap .project-card .card-left .card-desc {
-    font-size: 15px;
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution-title .card-desc {
+    font-size: 18px;
   }
-  .project .project-card-wrap .project-card .card-left .card-responsive {
-    gap: 10px;
-    font-size: 15px;
-    align-items: normal;
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-txt {
+    width: 25%;
+    font-size: 18px;
   }
-  .project .project-card-wrap .project-card .card-left .card-responsive img {
-    height: 15px;
+  .project .project-card-wrap .project-card .card-left .contribution-box .contribution .contribution-percent {
+    width: 70%;
   }
   .project .project-card-wrap .project-card .card-left .card-icon-box {
     margin-top: 30px;
