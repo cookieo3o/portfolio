@@ -259,6 +259,7 @@ const projects = [
     desc: "교육 콘텐츠 인트로 화면 영상 작업입니다.\nAfter Effects를 활용해 과하지 않으면서도 정적이지 않은 흐름으로 연출했습니다.\n플래시 작업 위주에서 처음 에펙으로 확장한 작업이었으며 모션과 타이밍에 대한 이해를 넓히는 계기가 되었습니다.",
     image: "./image/한글 인트로.mp4",
     icons: [
+      "./image/icon08.png",
       "./image/icon10.png"
     ]
   }
